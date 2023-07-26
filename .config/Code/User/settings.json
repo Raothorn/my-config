@@ -1,0 +1,74 @@
+{
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<leader>", "w", "/"],
+        "commands": [":vsplit"]
+      },
+      {
+        "before": ["<leader>", "w", "h"],
+        "after": ["<C-w>", "h"]
+      },
+      {
+        "before": ["<leader>", "w", "l"],
+        "after": ["<C-w>", "l"]
+      },
+      {
+        "before": ["<leader>", "w", "d"],
+        "commands": ["workbench.action.closeEditorsInGroup"]
+      },
+      {
+        "before": ["<leader>", "f", "s"],
+        "commands": [":w"]
+      },
+      {
+        "before": ["<leader>", "f", "f"],
+        "commands": ["workbench.action.quickOpen"]
+      },
+      {
+        "before": ["<leader>", "o", "o"],
+        "commands": ["workbench.action.showAllSymbols"]
+      },
+      {
+        "before": ["<leader>", "r", "r"],
+        "commands": ["workbench.action.rename"]
+      },
+      {
+        "before": ["<leader>", "e", "n"],
+        "commands": ["editor.action.marker.next"]
+      },
+      {
+        "before": ["<leader>", "e", "p"],
+        "commands": ["editor.action.marker.prev"]
+      },
+      {
+        "before": ["<leader>", "j", "b"],
+        "commands": ["workbench.action.navigateBack"]
+      },
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+          "before": ["f", "d"],
+          "after": ["<Esc>"]
+        }
+    ],
+    "[python]": {
+      "editor.formatOnType": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "editor.minimap.enabled": false,
+    "zenMode.hideLineNumbers": false,
+    "workbench.colorTheme": "Spacegray Eighties Dark",
+    "omnisharp.sdkPath": "/home/raothorn/.dotnet/sdk/6.0.412",
+    "vim.foldfix": true,
+    "rust-analyzer.inlayHints.typeHints.enable": false,
+    "window.menuBarVisibility": "toggle",
+    "[vue]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vim.statusBarColors.surroundinputmode": "",
+    "zenMode.fullScreen": false,
+    "prettier.bracketSameLine": true,
+    "rust-analyzer.inlayHints.chainingHints.enable": false,
+    "rust-analyzer.inlayHints.parameterHints.enable": false
+}
