@@ -4,10 +4,12 @@
         "workspaces": {
             "file:///home/raothorn/source/SleepingGods": "__default__profile__",
             "file:///home/raothorn/source/sleeping_gods": "__default__profile__",
-            "file:///home/raothorn/source/boardgame/client": "__default__profile__",
-            "file:///home/raothorn/source/boardgame/sleeping_gods": "__default__profile__"
+            "file:///home/raothorn/source/boardgame/sleeping_gods": "__default__profile__",
+            "file:///home/raothorn/source/boardgame/client": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1690374143085": "__default__profile__"
+        }
     },
     "profileAssociationsMigration": true,
     "telemetry.machineId": "15059e1b2cebb06b39472824c9504e5d59b897edec11169537e8020e58d19b80",
@@ -16,9 +18,16 @@
         "folders": [
             {
                 "folderUri": "file:///home/raothorn/source/boardgame/sleeping_gods"
+            },
+            {
+                "folderUri": "file:///home/raothorn/source/boardgame/client"
             }
         ],
-        "emptyWindows": []
+        "emptyWindows": [
+            {
+                "backupFolder": "1690374143085"
+            }
+        ]
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -58,22 +67,10 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/raothorn/source/boardgame/sleeping_gods",
-                                        "path": "/home/raothorn/source/boardgame/sleeping_gods",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/source/boardgame/sleeping_gods"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -85,6 +82,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/source/boardgame/client"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/raothorn/source/boardgame/sleeping_gods",
+                                        "path": "/home/raothorn/source/boardgame/sleeping_gods",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/source/boardgame/sleeping_gods"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -167,6 +175,13 @@
                         "label": "Share",
                         "submenu": {
                             "items": [
+                                {
+                                    "id": "github.copyVscodeDevLinkFile",
+                                    "label": "Copy vscode.dev Link"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)..."
@@ -479,11 +494,13 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleZenMode",
-                                    "label": "Zen Mode"
+                                    "label": "Zen Mode",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleCenteredLayout",
-                                    "label": "&&Centered Layout"
+                                    "label": "&&Centered Layout",
+                                    "checked": true
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -494,8 +511,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar",
-                                    "checked": true
+                                    "label": "&&Primary Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -749,8 +765,7 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location",
-                        "enabled": false
+                        "label": "&&Last Edit Location"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -819,54 +834,45 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3",
-                                    "enabled": false
+                                    "label": "Group &&3"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4",
-                                    "enabled": false
+                                    "label": "Group &&4"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5",
-                                    "enabled": false
+                                    "label": "Group &&5"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group",
-                                    "enabled": false
+                                    "label": "&&Next Group"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group",
-                                    "enabled": false
+                                    "label": "&&Previous Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left",
-                                    "enabled": false
+                                    "label": "Group &&Left"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right",
-                                    "enabled": false
+                                    "label": "Group &&Right"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above",
-                                    "enabled": false
+                                    "label": "Group &&Above"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below",
-                                    "enabled": false
+                                    "label": "Group &&Below"
                                 }
                             ]
                         }
@@ -1658,24 +1664,47 @@
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
-            "activityBarWidth": 48,
-            "sideBarWidth": 170,
-            "statusBarHeight": 22,
+            "activityBarWidth": 0,
+            "sideBarWidth": 0,
+            "statusBarHeight": 0,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/raothorn/source/boardgame/sleeping_gods",
-            "backupPath": "/home/raothorn/.config/Code/Backups/9b6f41553880e0334ff487029e17ef63",
+            "folder": "file:///home/raothorn/source/boardgame/client",
+            "backupPath": "/home/raothorn/.config/Code/Backups/49023e790580ad64c51c0a26269be8fb",
             "uiState": {
                 "mode": 1,
                 "x": 0,
-                "y": 32,
+                "y": 34,
                 "width": 1366,
                 "height": 734
             }
         },
-        "openedWindows": []
+        "openedWindows": [
+            {
+                "folder": "file:///home/raothorn/source/boardgame/sleeping_gods",
+                "backupPath": "/home/raothorn/.config/Code/Backups/9b6f41553880e0334ff487029e17ef63",
+                "uiState": {
+                    "mode": 1,
+                    "x": 0,
+                    "y": 34,
+                    "width": 1366,
+                    "height": 734
+                }
+            },
+            {
+                "folder": "file:///home/raothorn/source/boardgame/client",
+                "backupPath": "/home/raothorn/.config/Code/Backups/49023e790580ad64c51c0a26269be8fb",
+                "uiState": {
+                    "mode": 1,
+                    "x": 0,
+                    "y": 34,
+                    "width": 1366,
+                    "height": 734
+                }
+            }
+        ]
     }
 }

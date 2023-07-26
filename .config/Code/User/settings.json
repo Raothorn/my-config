@@ -45,6 +45,10 @@
         "before": ["<leader>", "j", "b"],
         "commands": ["workbench.action.navigateBack"]
       },
+      {
+        "before": ["<leader>", "<leader>"],
+        "commands": ["workbench.action.showCommands"]
+      },
     ],
     "vim.insertModeKeyBindings": [
         {
