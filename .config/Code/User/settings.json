@@ -1,53 +1,61 @@
 {
-    "vim.leader": "<space>",
+    "vim.leader": ",",
     "vim.normalModeKeyBindingsNonRecursive": [
       {
-        "before": ["<leader>", "w", "/"],
+        "before": ["<space>", "w", "/"],
         "commands": [":vsplit"]
       },
       {
-        "before": ["<leader>", "w", "h"],
+        "before": ["<space>", "w", "h"],
         "after": ["<C-w>", "h"]
       },
       {
-        "before": ["<leader>", "w", "l"],
+        "before": ["<space>", "w", "l"],
         "after": ["<C-w>", "l"]
       },
       {
-        "before": ["<leader>", "w", "d"],
+        "before": ["<space>", "w", "d"],
         "commands": ["workbench.action.closeEditorsInGroup"]
       },
       {
-        "before": ["<leader>", "f", "s"],
+        "before": ["<space>", "f", "s"],
         "commands": [":w"]
       },
       {
-        "before": ["<leader>", "f", "f"],
+        "before": ["<space>", "g", "g"],
+        "commands": ["editor.action.revealDefinition"]
+      },
+      {
+        "before": ["<space>", "f", "f"],
         "commands": ["workbench.action.quickOpen"]
       },
       {
-        "before": ["<leader>", "o", "o"],
+        "before": ["<space>", "o", "o"],
         "commands": ["workbench.action.showAllSymbols"]
       },
       {
-        "before": ["<leader>", "r", "r"],
+        "before": ["<space>", "r", "r"],
         "commands": ["workbench.action.rename"]
       },
       {
-        "before": ["<leader>", "e", "n"],
+        "before": ["<space>", "e", "n"],
         "commands": ["editor.action.marker.next"]
       },
       {
-        "before": ["<leader>", "e", "p"],
+        "before": ["<space>", "e", "p"],
         "commands": ["editor.action.marker.prev"]
       },
       {
-        "before": ["<leader>", "j", "b"],
+        "before": ["<space>", "j", "b"],
         "commands": ["workbench.action.navigateBack"]
       },
       {
-        "before": ["<leader>", "<leader>"],
+        "before": ["<space>", "<space>"],
         "commands": ["workbench.action.showCommands"]
+      },
+      {
+        "before": ["<space>", "t", "f"],
+        "commands": ["workbench.action.toggleZenMode"]
       },
     ],
     "vim.insertModeKeyBindings": [
@@ -59,6 +67,7 @@
     "[python]": {
       "editor.formatOnType": true
     },
+    "vim.easymotion": true,
     "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": false,
     "zenMode.hideLineNumbers": false,
@@ -74,5 +83,14 @@
     "zenMode.fullScreen": false,
     "prettier.bracketSameLine": true,
     "rust-analyzer.inlayHints.chainingHints.enable": false,
-    "rust-analyzer.inlayHints.parameterHints.enable": false
+    "rust-analyzer.inlayHints.parameterHints.enable": false,
+    "zenMode.hideStatusBar": false,
+    "zenMode.restore": false,
+    "editor.fontFamily": "'Source Code Pro', 'monospace', monospace",
+    "editor.fontSize": 13,
+    "diffEditor.renderSideBySide": false,
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "gitlens.mode.active": "zen"
 }

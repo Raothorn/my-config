@@ -4,11 +4,14 @@
         "workspaces": {
             "file:///home/raothorn/source/SleepingGods": "__default__profile__",
             "file:///home/raothorn/source/sleeping_gods": "__default__profile__",
+            "file:///home/raothorn/source/boardgame/sleeping_gods/my-proc-macros-lib": "__default__profile__",
+            "file:///home/raothorn/source/boardgame/sleeping_gods/my_proc_macros_lib": "__default__profile__",
             "file:///home/raothorn/source/boardgame/sleeping_gods": "__default__profile__",
-            "file:///home/raothorn/source/boardgame/client": "__default__profile__"
+            "file:///home/raothorn/source/boardgame/client": "__default__profile__",
+            "file:///home/raothorn/Downloads": "__default__profile__"
         },
         "emptyWindows": {
-            "1690374143085": "__default__profile__"
+            "1690594020744": "__default__profile__"
         }
     },
     "profileAssociationsMigration": true,
@@ -21,11 +24,17 @@
             },
             {
                 "folderUri": "file:///home/raothorn/source/boardgame/client"
+            },
+            {
+                "folderUri": "file:///home/raothorn/Downloads"
             }
         ],
         "emptyWindows": [
             {
-                "backupFolder": "1690374143085"
+                "backupFolder": "1690593713677"
+            },
+            {
+                "backupFolder": "1690594020744"
             }
         ]
     },
@@ -76,6 +85,17 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/raothorn/Downloads",
+                                        "path": "/home/raothorn/Downloads",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/raothorn/source/boardgame/client",
                                         "path": "/home/raothorn/source/boardgame/client",
                                         "scheme": "file"
@@ -93,6 +113,17 @@
                                     },
                                     "enabled": true,
                                     "label": "~/source/boardgame/sleeping_gods"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/raothorn/source/boardgame/sleeping_gods/my-proc-macros-lib",
+                                        "path": "/home/raothorn/source/boardgame/sleeping_gods/my-proc-macros-lib",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/source/boardgame/sleeping_gods/my-proc-macros-lib"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -164,8 +195,7 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll",
-                        "enabled": false
+                        "label": "Save A&&ll"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -349,6 +379,22 @@
                     {
                         "id": "editor.action.clipboardCopyAction",
                         "label": "&&Copy"
+                    },
+                    {
+                        "id": "submenuitem.MenubarCopy",
+                        "label": "Copy As",
+                        "submenu": {
+                            "items": [
+                                {
+                                    "id": "gitlens.copyRemoteFileUrlToClipboard",
+                                    "label": "Copy Remote File URL"
+                                },
+                                {
+                                    "id": "gitlens.copyRemoteFileUrlFrom",
+                                    "label": "Copy Remote File URL From..."
+                                }
+                            ]
+                        }
                     },
                     {
                         "id": "editor.action.clipboardPasteAction",
@@ -1072,8 +1118,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1439,8 +1484,9 @@
                 "userSettingsLabel": "ctrl+shift+f"
             },
             "workbench.view.scm": {
-                "label": "Ctrl+Shift+G",
-                "userSettingsLabel": "ctrl+shift+g"
+                "label": "Ctrl+Shift+G G",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+shift+g g"
             },
             "workbench.view.debug": {
                 "label": "Ctrl+Shift+D",
@@ -1666,7 +1712,7 @@
             "titleBarHeight": 0,
             "activityBarWidth": 0,
             "sideBarWidth": 0,
-            "statusBarHeight": 0,
+            "statusBarHeight": 22,
             "windowBorder": false
         }
     },
